@@ -18,6 +18,7 @@ services:
     hostname: splunkenterprise
     image: splunk/splunk:7.0.3
     environment:
+      SPLUNK_PASSWORD: admin
       SPLUNK_START_ARGS: --accept-license
       SPLUNK_ENABLE_LISTEN: 9997
       SPLUNK_ADD: tcp 1514
